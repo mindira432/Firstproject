@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myproject</title>
+    <style>
+        body{margin: 0;}
+
+        .navbar {
+            width: 100%;
+            
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            position: fixed;
+            background-color:darkslategray ;
+            text-align: center;
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+        
+
+        .navbar .list li{
+            float: left;
+        }
+
+        .home{
+            margin-left: 25%;
+        }
+
+
+        li a{
+            display: block;
+            color: white;
+            padding: 30px;
+            text-decoration: none;   
+        }
+         li a span:hover{color:darkred;}
+
+         .dropdown .dropbtn{
+             text-align:left;
+             position: relative;
+             text-decoration: none;}
+
+
+         .dropdown-content {
+                 display: none;
+                 position: absolute;
+                 background-color:slategrey;}
+                 
+                
+
+                 .dropdown-content a{
+                     color: purple;
+                     padding: 20px;
+                     display: block;
+                     text-align: left;}
+
+         .dropdown:hover .dropdown-content{display: block;}
+
+        .dropdown-content a:hover{background-color: darkgreen;
+                                  color: yellow;}
+
+               
+             
+         
+        
+        .image{width: 100%;
+        opacity:1;}
+
+        .school{
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            width: 100%;
+            font-size: 50px;
+            color: rgb(3, 46, 21);
+            font-style: italic;
+            font-weight: bold;
+            text-shadow: 3px 3px 3px green;}
+
+        *{box-sizing: border-box;}
+        
+        .box{
+            float: left;
+            width: 50%;
+            height: 500px;
+            background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(195,11,49,1) 100%);
+            
+            }
+
+            .clearfix ::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+    
+
+        p{text-align: center;
+        width: 100%;
+        font-size: 20px;
+        }
+
+.text-container{
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 30px; }
+
+    .text-container p{text-align: justify;}
+
+    
+    .top-section{
+        color: whitesmoke;
+        background-color: rgb(6, 32, 82);
+        width: 100%;
+        height: 700px;
+    }
+
+
+        .common-div{width: 30%;
+        float: left;}
+
+        
+
+        .menu{
+            list-style: none; }
+
+        .menu li{margin-bottom: 10px;
+        }
+
+        .menu li a{
+            text-decoration: none;
+            padding: 2px;
+            }
+
+            .menu li a:hover{border-bottom:1px solid maroon;}
+
+            .menu a:hover{margin-left: 6px;
+            transition: 2s ;
+            color: green;
+
+            }
+        .common-div p{text-align: justify;}
+
+        .first{margin:0 30px;}
+
+        .vector{list-style: none;}
+
+        .vector li{margin-bottom: 10px;}
+
+       @media screen and (max-width:600px) {
+           .text-container{color: black;
+            background-color:blue !important;
+            width: 100% !important; }
+
+            
+.box
+
+}
+
+
+       @media screen and (min-width:600px) {.text-container{color: red;}
+           
+       }
+
+
+    </style>
+
+</head>
+<body>
+    
+    
+       <ul class="navbar">
+           <div class="list">
+           <li class="home"> <a href="#" > <span>Home</span> </a></li>
+           <li class="dropdown">
+            <a href="#"   class="dropbtn"> <span>About us</span> </a>
+              <div class="dropdown-content">
+                  <a href="#">Introduction</a>
+                  <a href="#">School logo</a>
+                  <a href="#"> School Motto</a>
+                  <a href="#"> Staff</a>
+              </div>
+             </li>
+           <li class="dropdown">
+             <a href="#" class="dropbtn"> <span>Admission</span> </a>
+             <div class="dropdown-content">
+                 <a href="#"> Courses offered</a>
+                 <a href="#"> Documents required</a>
+                 <a href="#"> Prospectus 2020</a>
+                 
+             </div>
+            </li>
+           <li> <a href="#" > <span> Library</span></a></li>
+           <li> <a href="#" > <span> Contact</span> </a></li>
+           </div>
+       </ul>
+      <div class="container">
+       <img class="image" src="narayani building.jpg" alt="narayani building"> <br>
+      </div>
+      <div class="school">NARAYANI MODEL HIGHER SECONDARY SCHOOL</div>
+
+
+       <div class="clearfix">
+           <div class="box">
+               <img src="students.jpg" alt="students" style="width: 100%; height: 500px;">
+
+           </div>
+           <div class="box">
+               <div class="text-container">
+               <h1> Introduction</h1>
+               <p> "Education reformers and policymakers who consider higher academic standards a centerpiece of their movement should not count on teachers to be a driving force," adds Wadsworth. "It might be that the academic energies of even the most motivated teachers are sapped by what they consider to be the stressful day-to-day demands of the classroom. From the teachers' perspective, order and civility, not higher standards, provide the infrastructure that good teaching builds on."
+
+            </p></div>
+       
+           </div>
+       </div>
+       <br>
+    
+     <!-- footer section  -->
+     <section>
+      <div class="top-section">
+          <div class="firstfooter">
+              <div class="first common-div">
+                  <h4 class="slogan">ABOUT US</h4>
+                  <p>Narayani Model Higher Secondary School, Chitwan, is an educational institution of school and +2 level learning, established in 2028 BS and managed by the Goverment of Nepal.</p>
+
+              </div>
+             <div class="second common-div">
+                 <h4 class="list">USEFUL LINKS</h4>
+                 <ul class="menu">
+                     <li> <a href="#"> Home</a></li>
+                     <li> <a href="#"> About us</a></li>
+                     <li> <a href="#"> Academics</a></li>
+                     <li> <a href="#"> Admission</a></li>
+                     <li> <a href="#">Resarch</a></li>
+                 </ul>
+
+             </div>
+              
+             <div class="third common-div">
+                 <h4 class="contact">CONTACT US</h4>
+                 <ul class="vector">
+                     <li> <img src="map icon.png" alt="map icon" style="width: 30px; height: 30px; margin-right:5px ; filter:grayscale(80%); ">  The Narayani M.H.S.S, Bharatpur-12,Chitwan,Nepal</li>
+                     <li> <img src="phon.png" alt="phon" style="width: 15px; height: 15px; margin-right: 5px; filter:invert(100%);"> 9846915081 </li>
+                     <li> <img src="mail.png" alt="mail" style="width: 15px; height:15px ; margin-right: 5px; filter: invert(100%);">  ABC@gmail.com</li>
+
+
+                 </ul>
+
+             </div>
+          </div>
+
+      </div>
+     </section>
+
+</body>
+</html>
